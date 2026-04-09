@@ -1,8 +1,6 @@
 # ReviewPilot - AI Pull Request Reviewer
 
-ReviewPilot is a portfolio-ready GitHub pull request reviewer. It receives GitHub pull request webhooks, fetches the diff, runs rule-based risk checks, optionally asks OpenAI for a structured review, and can post the final comment back to the pull request.
-
-This first version is intentionally dependency-light so it is easy to run, demo, and explain in interviews.
+ReviewPilot is a GitHub pull request reviewer. It receives GitHub pull request webhooks, fetches the diff, runs rule-based risk checks, optionally asks OpenAI for a structured review, and can post the final comment back to the pull request.
 
 ## What It Does
 
@@ -13,14 +11,6 @@ This first version is intentionally dependency-light so it is easy to run, demo,
 - Uses the OpenAI Responses API for a structured review when `OPENAI_API_KEY` is configured
 - Posts a Markdown review comment back to GitHub when `GITHUB_TOKEN` is configured
 - Includes a local dashboard and manual diff-review demo at `/`
-
-## Why This Project Helps Your Resume
-
-This is stronger than a simple chatbot because it demonstrates backend integration, webhooks, API authentication, security checks, AI-assisted review, and a usable product workflow.
-
-Resume bullet:
-
-> Built ReviewPilot, an AI-assisted GitHub pull request reviewer using Node.js, GitHub webhooks, OpenAI Responses API, and rule-based static checks to summarize diffs, detect risky code patterns, suggest tests, and post structured review comments back to pull requests.
 
 ## Run Locally
 
