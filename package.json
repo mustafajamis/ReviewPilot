@@ -1,0 +1,13 @@
+{
+  "name": "reviewpilot-ai-reviewer",
+  "version": "0.1.0",
+  "description": "AI-assisted GitHub pull request reviewer with webhook ingestion, rule checks, and optional OpenAI summaries.",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
